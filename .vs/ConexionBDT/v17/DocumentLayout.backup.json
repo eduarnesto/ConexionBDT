@@ -1,0 +1,136 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Eduardo\\Desktop\\ConexionBDT\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{59E29EA9-F82E-4134-BE0B-844037627C3D}|ConexionBDT\\ConexionBDT.csproj|c:\\users\\eduardo\\desktop\\conexionbdt\\conexionbdt\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{59E29EA9-F82E-4134-BE0B-844037627C3D}|ConexionBDT\\ConexionBDT.csproj|solutionrelative:conexionbdt\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{59E29EA9-F82E-4134-BE0B-844037627C3D}|ConexionBDT\\ConexionBDT.csproj|c:\\users\\eduardo\\desktop\\conexionbdt\\conexionbdt\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{59E29EA9-F82E-4134-BE0B-844037627C3D}|ConexionBDT\\ConexionBDT.csproj|solutionrelative:conexionbdt\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{59E29EA9-F82E-4134-BE0B-844037627C3D}|ConexionBDT\\ConexionBDT.csproj|c:\\users\\eduardo\\desktop\\conexionbdt\\conexionbdt\\views\\home\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{59E29EA9-F82E-4134-BE0B-844037627C3D}|ConexionBDT\\ConexionBDT.csproj|solutionrelative:conexionbdt\\views\\home\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{59E29EA9-F82E-4134-BE0B-844037627C3D}|ConexionBDT\\ConexionBDT.csproj|c:\\users\\eduardo\\desktop\\conexionbdt\\conexionbdt\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{59E29EA9-F82E-4134-BE0B-844037627C3D}|ConexionBDT\\ConexionBDT.csproj|solutionrelative:conexionbdt\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D5EB6016-DBCD-46DF-918C-9EA6953E8FAE}|DALD\\DAL.csproj|c:\\users\\eduardo\\desktop\\conexionbdt\\dald\\listadosdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D5EB6016-DBCD-46DF-918C-9EA6953E8FAE}|DALD\\DAL.csproj|solutionrelative:dald\\listadosdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{85C196D1-E2FB-4009-852D-8DA035914706}|ENT\\ENT.csproj|c:\\users\\eduardo\\desktop\\conexionbdt\\ent\\clspersona.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{85C196D1-E2FB-4009-852D-8DA035914706}|ENT\\ENT.csproj|solutionrelative:ent\\clspersona.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{59E29EA9-F82E-4134-BE0B-844037627C3D}|ConexionBDT\\ConexionBDT.csproj|c:\\users\\eduardo\\desktop\\conexionbdt\\conexionbdt\\conexionbdt.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{59E29EA9-F82E-4134-BE0B-844037627C3D}|ConexionBDT\\ConexionBDT.csproj|solutionrelative:conexionbdt\\conexionbdt.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Eduardo\\Desktop\\ConexionBDT\\ConexionBDT\\Program.cs",
+              "RelativeDocumentMoniker": "ConexionBDT\\Program.cs",
+              "ToolTip": "C:\\Users\\Eduardo\\Desktop\\ConexionBDT\\ConexionBDT\\Program.cs",
+              "RelativeToolTip": "ConexionBDT\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-19T22:01:57.073Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Delete.cshtml",
+              "DocumentMoniker": "C:\\Users\\Eduardo\\Desktop\\ConexionBDT\\ConexionBDT\\Views\\Home\\Delete.cshtml",
+              "RelativeDocumentMoniker": "ConexionBDT\\Views\\Home\\Delete.cshtml",
+              "ToolTip": "C:\\Users\\Eduardo\\Desktop\\ConexionBDT\\ConexionBDT\\Views\\Home\\Delete.cshtml",
+              "RelativeToolTip": "ConexionBDT\\Views\\Home\\Delete.cshtml",
+              "ViewState": "AgIAACQAAAAAAAAAAAAAAD8AAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-19T21:12:00.723Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Eduardo\\Desktop\\ConexionBDT\\ConexionBDT\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "ConexionBDT\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Eduardo\\Desktop\\ConexionBDT\\ConexionBDT\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "ConexionBDT\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAACAAAAAAAAAAAAAAAEcAAABHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-19T20:54:15.989Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\Eduardo\\Desktop\\ConexionBDT\\ConexionBDT\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "ConexionBDT\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\Eduardo\\Desktop\\ConexionBDT\\ConexionBDT\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "ConexionBDT\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-19T19:29:34.98Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ListadosDAL.cs",
+              "DocumentMoniker": "C:\\Users\\Eduardo\\Desktop\\ConexionBDT\\DALD\\ListadosDAL.cs",
+              "RelativeDocumentMoniker": "DALD\\ListadosDAL.cs",
+              "ToolTip": "C:\\Users\\Eduardo\\Desktop\\ConexionBDT\\DALD\\ListadosDAL.cs",
+              "RelativeToolTip": "DALD\\ListadosDAL.cs",
+              "ViewState": "AgIAAIQAAAAAAAAAAAAuwJcAAAA9AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-19T20:54:40.917Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ClsPersona.cs",
+              "DocumentMoniker": "C:\\Users\\Eduardo\\Desktop\\ConexionBDT\\ENT\\ClsPersona.cs",
+              "RelativeDocumentMoniker": "ENT\\ClsPersona.cs",
+              "ToolTip": "C:\\Users\\Eduardo\\Desktop\\ConexionBDT\\ENT\\ClsPersona.cs",
+              "RelativeToolTip": "ENT\\ClsPersona.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAmwA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-19T20:54:41.976Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ConexionBDT.csproj",
+              "DocumentMoniker": "C:\\Users\\Eduardo\\Desktop\\ConexionBDT\\ConexionBDT\\ConexionBDT.csproj",
+              "RelativeDocumentMoniker": "ConexionBDT\\ConexionBDT.csproj",
+              "ToolTip": "C:\\Users\\Eduardo\\Desktop\\ConexionBDT\\ConexionBDT\\ConexionBDT.csproj",
+              "RelativeToolTip": "ConexionBDT\\ConexionBDT.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-11-19T20:51:15.483Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
