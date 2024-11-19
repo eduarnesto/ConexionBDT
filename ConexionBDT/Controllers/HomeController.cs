@@ -1,5 +1,6 @@
 using ConexionBDT.Models;
 using DALD;
+using ENT;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Data.SqlClient;
 using System.Diagnostics;
@@ -8,15 +9,48 @@ namespace ConexionBDT.Controllers
 {
     public class HomeController : Controller
     {
-        
-        
-
-        
-
         public IActionResult Index()
         {
-            
-            return View();
+            List<ClsPersona> list = new List<ClsPersona>();
+            try
+            {
+                list = ListadosDAL.ListadoCompletoPersonasDAL();
+            }
+            catch (Exception ex)
+            {
+                //TODO Pagina de errror
+            }
+            return View(list);
+        }
+
+        public IActionResult Delete(int id)
+        {
+            ClsPersona persona = new ClsPersona();
+            try
+            {
+                persona = ListadosDAL.BuscarPersonaPorId(id);
+            }
+            catch (Exception ex)
+            {
+                //TODO Pagina de error
+            }
+            return View(persona);
+        }
+
+        [HttpPost]
+        public IActionResult OnDelete(int id)
+        {
+            string pagina = "";
+            try
+            {
+                ListadosDAL.eliminarPersona(id);
+                pagina = "Index";
+            }
+            catch (Exception ex)
+            {
+                pagina = "Error";
+            }
+            return RedirectToAction(pagina);
         }
 
         [HttpPost]

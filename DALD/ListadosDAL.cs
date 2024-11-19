@@ -39,16 +39,16 @@ namespace DALD
                     while (miLector.Read())
                     {
                         oPersona = new ClsPersona();
-                        oPersona.Id = (int)miLector["ID"];
-                        oPersona.Nombre = (string)miLector["Nombre"];
-                        oPersona.Apellidos = (string)miLector["Apellidos"];
-                        oPersona.Foto = (string)miLector["Foto"];
+                        oPersona.id = (int)miLector["ID"];
+                        oPersona.nombre = (string)miLector["Nombre"];
+                        oPersona.apellidos = (string)miLector["Apellidos"];
+                        oPersona.foto = (string)miLector["Foto"];
                         if (miLector["FechaNacimiento"] != System.DBNull.Value)
                         {
-                            oPersona.FechaNacimiento = (DateTime)miLector["FechaNacimiento"];
+                            oPersona.fechaNacimiento = (DateTime)miLector["FechaNacimiento"];
                         }
-                        oPersona.Direccion = (string)miLector["Direccion"];
-                        oPersona.Telefono = (string)miLector["Telefono"];
+                        oPersona.direccion = (string)miLector["Direccion"];
+                        oPersona.telefono = (string)miLector["Telefono"];
                         listadoPersonas.Add(oPersona);
                     }
                 }
@@ -64,6 +64,60 @@ namespace DALD
             }
 
             return listadoPersonas;
+        }
+
+        /// <summary>
+        /// Devuelve una persona de la base de datos segun su id
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns>Devuelve una persona vacía si no se encuentra la persona</returns>
+        public static ClsPersona BuscarPersonaPorId(int id)
+        {
+            SqlConnection miConexion = new SqlConnection();
+
+            SqlCommand miComando = new SqlCommand();
+
+            SqlDataReader miLector;
+
+            ClsPersona oPersona = new ClsPersona();
+
+            try
+            {
+                miConexion = ClsConexion.getConexion();
+                miComando.CommandText = "SELECT * FROM personas WHERE ID=@id";
+                miComando.Connection = miConexion;
+                miComando.Parameters.AddWithValue("@id", id);
+                miLector = miComando.ExecuteReader();
+
+                if (miLector.HasRows)
+                {
+                    while (miLector.Read())
+                    {
+                        oPersona = new ClsPersona();
+                        oPersona.id = (int)miLector["ID"];
+                        oPersona.nombre = (string)miLector["Nombre"];
+                        oPersona.apellidos = (string)miLector["Apellidos"];
+                        oPersona.foto = (string)miLector["Foto"];
+                        if (miLector["FechaNacimiento"] != System.DBNull.Value)
+                        {
+                            oPersona.fechaNacimiento = (DateTime)miLector["FechaNacimiento"];
+                        }
+                        oPersona.direccion = (string)miLector["Direccion"];
+                        oPersona.telefono = (string)miLector["Telefono"];
+                    }
+                }
+                miLector.Close();
+            }
+            catch (Exception ex)
+            {
+                throw;
+            }
+            finally
+            {
+                miConexion.Close();
+            }
+
+            return oPersona;
         }
 
         /// <summary>
@@ -91,9 +145,11 @@ namespace DALD
             {
                 miConexion = ClsConexion.getConexion();
 
-                miComando.CommandText = "DELETE FROM Personas WHERE IDPersona=@id";
+                miComando.CommandText = "DELETE FROM Personas WHERE ID=@id";
 
                 miComando.Connection = miConexion;
+
+                miComando.Parameters.AddWithValue("@id", id);
 
                 numeroFilasAfectadas = miComando.ExecuteNonQuery();
 
@@ -102,9 +158,7 @@ namespace DALD
             catch (Exception ex)
 
             {
-
                 throw ex;
-
             }
 
             return numeroFilasAfectadas;

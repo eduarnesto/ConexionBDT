@@ -3,14 +3,14 @@
     public class ClsPersona
     {
         #region Propiedades
-        public int Id { get; set; }
-        public string Nombre { get; set; }
-        public string Apellidos { get; set; }
-        public string Telefono { get; set; }
-        public string Direccion { get; set; }
-        public string Foto { get; set; }
-        public DateTime FechaNacimiento { get; set; }
-        public int IDDepartamento { get; set; }
+        public int id { get; set; }
+        public string nombre { get; set; }
+        public string apellidos { get; set; }
+        public string telefono { get; set; }
+        public string direccion { get; set; }
+        public string foto { get; set; }
+        public DateTime fechaNacimiento { get; set; }
+        public int idDepartamento { get; set; }
         #endregion
 
 
@@ -19,14 +19,14 @@
 
         public ClsPersona(int id, string nombre, string apellidos, string telefono, string direccion, string foto, DateTime fechaNacimiento, int idDepartamento)
         {
-            Id = id;
-            Nombre = nombre;
-            Apellidos = apellidos;
-            Telefono = telefono;
-            Direccion = direccion;
-            Foto = foto;
-            FechaNacimiento = fechaNacimiento;
-            IDDepartamento = idDepartamento;
+            this.id = id;
+            this.nombre = nombre;
+            this.apellidos = apellidos;
+            this.telefono = telefono;
+            this.direccion = direccion;
+            this.foto = foto;
+            this.fechaNacimiento = fechaNacimiento;
+            this.idDepartamento = idDepartamento;
         }
         #endregion
     }

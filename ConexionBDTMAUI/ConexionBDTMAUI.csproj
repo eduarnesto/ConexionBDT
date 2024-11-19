@@ -63,7 +63,7 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <ProjectReference Include="..\DALD\DALD.csproj" />
+	  <ProjectReference Include="..\DALD\DAL.csproj" />
 	  <ProjectReference Include="..\ENT\ENT.csproj" />
 	</ItemGroup>
 

@@ -1,14 +1,77 @@
-﻿﻿@{
-    ViewData["Title"] = "Home Page";
+﻿@model IEnumerable<ENT.ClsPersona>
+
+@{
+    ViewData["Title"] = "Index";
 }
 
+<h1>Index</h1>
 
-<div class="text-center">
-    <form method="post" action="@Url.Action("Conexion", "Home")">
-        <input type="submit" name="estado" value="Conectar" />
-    </form>
-
-    <p>@ViewBag.estado</p>
-    
-    
-</div> 
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.id)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.nombre)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.apellidos)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.telefono)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.direccion)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.foto)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.fechaNacimiento)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.idDepartamento)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.id)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.nombre)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.apellidos)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.telefono)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.direccion)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.foto)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.fechaNacimiento)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.idDepartamento)
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { id=item.id}) |
+                @Html.ActionLink("Details", "Details", new { id = item.id}) |
+                @Html.ActionLink("Delete", "Delete", new { id = item.id})
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
